@@ -46,4 +46,4 @@ df <- df %>% mutate(boat =gsub("^$", "None", boat))
 df <- df %>% mutate(has_cabin_number = ifelse (cabin == "", 0, 1))
 
 #5: Submit the project on Github
-write.table(df, file = "titanic_clean.csv", sep = ",")
+write.table(df, file = "titanic_clean.csv", sep = ",", col.names = NA)
